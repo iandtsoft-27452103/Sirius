@@ -50,10 +50,6 @@ Shogi is game like chess.
 
 Double click "Sirius.sln" and build with using Visual Studio. 
 
-## Contents of Release file
-
-The execution environment of this software is contained in the Release file.
-
 ## References
 
 I developed this software referring to the softwares as below.
