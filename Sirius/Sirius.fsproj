@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Common.fs" />
+    <Compile Include="BitOperation.fs" />
+    <Compile Include="Move.fs" />
+    <Compile Include="Board.fs" />
+    <Compile Include="CSA.fs" />
+    <Compile Include="SFEN.fs" />
+    <Compile Include="IO.fs" />
+    <Compile Include="AttacksOperation.fs" />
+    <Compile Include="GenMoves.fs" />
+    <Compile Include="Mate1Ply.fs" />
+    <Compile Include="Feature.fs" />
+    <Compile Include="Evaluate.fs" />
+    <Compile Include="Sort.fs" />
+    <Compile Include="Test.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
