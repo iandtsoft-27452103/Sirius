@@ -184,7 +184,7 @@ let UnDo(bt:BoardTree ref, move:uint32, color:int) =
             bt.contents.Hand.[color] <- bt.contents.Hand.[color] - Hand_Hash[int(index)]
             bt.contents.BB_Piece[color ^^^ 1, int(icap_piece)] <- bt.contents.BB_Piece[color ^^^ 1, int(icap_piece)] ^^^ ABB_Mask.[int(ito)]
             bt.contents.BB_Occupied.[color ^^^ 1] <- bt.contents.BB_Occupied.[color ^^^ 1] ^^^ ABB_Mask.[int(ito)]
-            bt.contents.Board.[int(ito)] <- int8(-Sign_Table[color ^^^ 1] * int(icap_piece))
+            bt.contents.Board.[int(ito)] <- int8(Sign_Table[color ^^^ 1] * int(icap_piece))
         else
             bt.contents.Board.[int(ito)] <- int8(Piece.Empty)
     bt.contents.PrevHash <- bt.contents.Hash[int(bt.contents.Ply) - 2];
